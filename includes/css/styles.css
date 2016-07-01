@@ -1,18 +1,8 @@
-/*
-
-My Custom CSS
-=============
-
-Author:  Brad Hussey
-Updated: August 2013
-Notes:	 Hand coded for Udemy.com
-
-*/
-
 
 /* --------------------------------------
-   Layout
-   -------------------------------------- */
+Layout
+-------------------------------------- */
+
 #features
 {
   text-align: center;
@@ -35,11 +25,12 @@ footer
 
 
 /* --------------------------------------
-   Typography
-   -------------------------------------- */
+Typography
+-------------------------------------- */
 body{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+
 }
 .well .page-header
 {
@@ -56,52 +47,49 @@ ul.unstyled
 }
 
 /* --------------------------------------
-   Navbar
-   -------------------------------------- */
-   #searchInput
-   {
-     width: 200px;
-   }
+Navbar
+-------------------------------------- */
+#searchInput
+{
+  width: 200px;
+}
+.navbar{
+
+  opacity: 0.9;
+}
 .navbar-brand
 {
-  padding: 10px 18px;
+  padding: 5px 18px;
 }
 
 /* --------------------------------------
-   Carousel
-   -------------------------------------- */
-   #myCarousel{
-     margin-top: 60px;
-   }
-   .carousel-caption{
-     font-size: 24px;
-   }
-   .carousel-caption h4
-   {
-     font-size: 32px;
-   }
+Carousel
+-------------------------------------- */
 
-#myCarousel .item { height: 400px; }
+.carousel-caption{
+  font-size: 24px;
+}
+
+#myCarousel .item { height: 600px; }
 #slide1 {
-background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+  background: url('../../images/Andamanm.jpg') top center no-repeat;
+  background: cover;
 }
 #slide2 {
-background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+  background: url('../../images/amedium.jpg') top center no-repeat;
+  background: cover;
 }
 #slide3 {
-background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+  background: url('../../images/ladakhnewmedium.jpg') top center no-repeat;
+  background: cover;
 }
 
 
 /* --------------------------------------
-   Global Styles
-   -------------------------------------- */
-.alert
-{
-  margin-top: 20px;
-  display: none;
-  }
-  .well
+Global Styles
+-------------------------------------- */
+
+.well
 {
   margin: 20px 0;
 }
@@ -109,76 +97,47 @@ background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
 {
   margin: 0 20px 10px 0;
 }
-.thumbnails
+
+.Ladakh
 {
-  margin:20px 0;
+  margin-top: 50px;
+  background:lightgrey;
+  color: black;
 }
-.thumbnails
-{
-  position: relative;
-}
-.thumbnail h3
-{
-  font-size: 16px;
-  margin: 0 0 10px;
-  line-height: 20px;
-}
-.thumbnail .price
-{
-  font-size: 22px;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 10px;
-}
-.thumbnail .price sup
- {
-  font-weight: normal;
-  font-size: 12px;
-}
-.thumbnail span.glyphicon
-{
-  margin-right: 5px;
-}
+
+
 
 
 /* --------------------------------------
-   Media Queries
-   -------------------------------------- */
+Media Queries
+-------------------------------------- */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px)
 {
-.thumbnail .price
-{
-  font-size: 14px;
-}
-.thumbnail .price sup
-{
-  font-size: 10px;
-}
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px)
 {
-  #myCarousel .item { height: 310px; }
+
+
   #slide1 {
-  background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+    background: url('../../images/Andamans.jpg') top center no-repeat;
+    background-size: cover;
   }
   #slide2 {
-  background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+    background: url('../../images/asmall.jpg') top center no-repeat;
+    background-size: cover;
   }
   #slide3 {
-  background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+    background: url('../../images/ladakhnewsmall.jpg') top center no-repeat;
+    background-size: cover;
   }
   .carousel-caption
   {
     font-size: 16px;
-  }
-  .carousel-caption h4
-  {
-    font-size: 22px;
   }
 
 }
@@ -186,15 +145,21 @@ background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
 /* Large desktop */
 @media (min-width: 1200px)
 {
-  #myCarousel .item { height: 500px; }
+  #myCarousel .item {
+    height: 600px;
+  }
+
   #slide1 {
-  background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+    background: url('../../images/Andaman1.jpg') top center no-repeat;
+    background-size: cover;
   }
   #slide2 {
-  background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+    background: url('../../images/alarge.jpg') top center no-repeat;
+    background-size: cover;
   }
   #slide3 {
-  background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+    background: url('../../images/Ladakhnewlarge.jpg') top center no-repeat;
+    background-size: cover;
   }
 
 }
